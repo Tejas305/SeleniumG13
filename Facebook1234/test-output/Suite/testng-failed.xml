@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FireFox(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="testNG.PrivacyTermsCookies">
+        <methods>
+          <include name="goToPrivacyPolicy"/>
+          <include name="goTocraeteNewAccount"/>
+          <include name="launchBrowser"/>
+          <include name="goToCookiesPolicy"/>
+          <include name="closedBrowser"/>
+          <include name="clearPOMObjects"/>
+          <include name="goToTermsButton"/>
+          <include name="createPOMObjects"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testNG.PrivacyTermsCookies -->
+    </classes>
+  </test> <!-- FireFox(failed) -->
+  <test thread-count="2" parallel="tests" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNG.PrivacyTermsCookies">
+        <methods>
+          <include name="goToPrivacyPolicy"/>
+          <include name="goTocraeteNewAccount"/>
+          <include name="launchBrowser"/>
+          <include name="goToCookiesPolicy"/>
+          <include name="closedBrowser"/>
+          <include name="clearPOMObjects"/>
+          <include name="createPOMObjects"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testNG.PrivacyTermsCookies -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
